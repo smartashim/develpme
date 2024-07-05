@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--css part of card-->
+        <style>
+            *{
+                margin:0;
+                padding:0;
+                
+            }
+            body{
+                font-family:Arial, Helvetica, sans-serif;
+                background-image:url(pexels-pixabay-33545.jpg);
+            }
+            .container{
+                background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
+                padding:16px;
+
+            }
+            .card{
+                width:300px;
+                height:60vh;
+                overflow:hidden;
+                border:1px solid black;
+                margin:auto;
+                padding:12px  16px;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.2),0 8px 20px rgba(0,0,0,0.19);
+                text-align:center;
+                background-color:#fff;
+                margin-top:50px;
+
+                }
+            .imgcontainer{
+            width:300px;
+            }
+            .card-title{
+                margin-top:12px;
+                text-transform:capitalize;
+                text-shadow:2px 2px lightgray;
+                text-align:center;
+            }
+            .card-text{
+                font-size:17px;
+                letter-spacing:0.8px;
+                text-align:center;
+                text-shadow:1px 1px coral;
+                font-weight:400px;
+                
+            }
+          .btn{
+            width:100px;
+           margin:8px 0;
+           padding:12px 14px;
+           background-color:black;
+           color:white;
+           border:none;
+           cursor:pointer;
+           border-radius:13px;
+          }
+            
+        .btn:hover{
+            background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
+        }
+
+        </style>
+    </head>
+    <body>
+        <!--simple layout of card-->
+        <div class="container">
+            <div class="card">
+                <img src="pussig.webp" alt="pusing" class="imgcontainer">
+            
+            <h2 class="card-title">Hotel management</h2>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam suscipit voluptatum, tempora vero harum
+                 facere aut quae dolore itaque ex consequuntur fugit cum at, neque sequi tenetur soluta. Similique, eveniet!</p>
+            <button tye="button " class="btn">see more</button>
+            </div>
+        </div>
+    </body>
+</html>
