@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-container</title>
+    <link rel="stylesheet" href="button.css">
+</head>
+<body>
+    <div class="flex-container">
+        <div class="card">
+            <img src="hote12.webp" alt="hotel" class="img">
+            <div class="card-body">
+                <h2 class=card-title>hotel management</h2>
+                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quas unde exercitationem deserunt
+                     voluptas sint fugit, nisi nulla hic quo error libero, dolorem vitae ea consectetur, pariatur accusamus reiciendis minima?</p>
+                     <button class="btn" ><a href="#" >see more</a> 
+                    </button>
+                 </div>
+                 </div>
+                 <div class="card">
+                    <img src="hote12.webp" alt="hotel" class="img">
+                    <div class="card-body">
+                        <h2 class=card-title>hotel management</h2>
+                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quas unde exercitationem deserunt
+                             voluptas sint fugit, nisi nulla hic quo error libero, dolorem vitae ea consectetur, pariatur accusamus reiciendis minima?</p>
+                             <button class="btn" ><a href="#" >see more</a> 
+                            </button>/*card css*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background-color:lightgray;
+    
+
+}
+.flex-container{
+    display:flex;
+}
+.card{
+    width:350px;
+    height:70vh;
+    background-color:black;
+    color:#00ffff;
+    text-align:center;
+    justify-content:center;
+    border-radius:17px;
+    margin:18px;
+    box-shadow:1px 3px 2px orange, 3px 0 0 darkblue, 0 0 30px red;
+    
+    
+
+}
+.card:hover{
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
+}
+
+.img{
+    width:100%;
+    padding:14px;
+    border-radius:12px;
+}
+.card-title{
+    text-transform:capitalize;
+    font-size:24px;
+    font-weight:700;
+    letter-spacing:0.4px;
+    color:white;
+
+}
+.card-text{
+    padding:12px;
+    text-align:center;
+    line-height:20px;
+    letter-spacing:0.8px;
+    text-shadow:1px 1px black;
+
+}
+.btn{
+    padding:12px 16px;
+    border-radius:17px;
+    text-decoration:none;
+    font-size:15px;
+    font-weight:bold;
+    background-color:#00ffff;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    text-shadow:1px 1px salmon;
+}
+.btn:hover{
+    background-color:lightgray;
+}
+.btn a{
+    text-decoration:none;
+}
+
+                         </div>
+                      </div>
+                      <div class="card">
+                        <img src="hote12.webp" alt="hotel" class="img">
+                        <div class="card-body">
+                            <h2 class=card-title>hotel management</h2>
+                             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quas unde exercitationem deserunt
+                                 voluptas sint fugit, nisi nulla hic quo error libero, dolorem vitae ea consectetur, pariatur accusamus reiciendis minima?</p>
+                                 <button class="btn" ><a href="#" >see more</a> 
+                                </button>
+                             </div>
+                          </div>
+    </div>
+</body>
+</html>
+
