@@ -25,7 +25,21 @@
                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quas unde exercitationem deserunt
                              voluptas sint fugit, nisi nulla hic quo error libero, dolorem vitae ea consectetur, pariatur accusamus reiciendis minima?</p>
                              <button class="btn" ><a href="#" >see more</a> 
-                            </button>/*card css*/
+                            </button>
+                       </div>
+                      </div>
+                      <div class="card">
+                        <img src="hote12.webp" alt="hotel" class="img">
+                        <div class="card-body">
+                            <h2 class=card-title>hotel management</h2>
+                             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quas unde exercitationem deserunt
+                                 voluptas sint fugit, nisi nulla hic quo error libero, dolorem vitae ea consectetur, pariatur accusamus reiciendis minima?</p>
+                                 <button class="btn" ><a href="#" >see more</a> 
+                                </button>
+                             </div>
+                          </div>
+                       </div>
+/*card css*/
 *{
     margin:0;
     padding:0;
@@ -96,19 +110,5 @@ body{
     text-decoration:none;
 }
 
-                         </div>
-                      </div>
-                      <div class="card">
-                        <img src="hote12.webp" alt="hotel" class="img">
-                        <div class="card-body">
-                            <h2 class=card-title>hotel management</h2>
-                             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quas unde exercitationem deserunt
-                                 voluptas sint fugit, nisi nulla hic quo error libero, dolorem vitae ea consectetur, pariatur accusamus reiciendis minima?</p>
-                                 <button class="btn" ><a href="#" >see more</a> 
-                                </button>
-                             </div>
-                          </div>
-    </div>
-</body>
-</html>
+                       
 
