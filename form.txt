@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form action="/submit" method="post" class="advance-form">
+    <h2>advanced form</h2>
+    <label for="uname">username</label>
+    <input type="text" placeholder="Enter username" id="uname" name="uname" required>
+    <label for="pwd">password</label> 
+    <input type="password" placeholder="Enter password" id="password" name="pwd" required>
+    <label for="email">email</label>
+    <input type="email" placeholder="Enter email" id="email" name="mail" required>
+    <button type="submit" value="submit">submit</button>
+  </form>
+  
+</body>
+</html>
+<!--css part of form-->
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    height:100vh;
+    display:flex;
+    background-color:#00ffff;
+    justify-content:center;
+    align-items:center;
+}
+.advance-form{
+    background-color:#fff;
+    max-width:350px;
+    width:100%;
+    padding:20px;
+    border-radius:8px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+.advance-form h2{
+    margin-bottom:20px;
+    font-size:24px;
+    color:#333;
+    text-align:center;
+}
+.advance-form label{
+    display:block;
+    margin-bottom:8px;
+    color:#333;
+    font-weight:bold;
+}
+.advance-form input,
+.advance-form button{
+    width:100%;
+    padding:10px;
+    margin-bottom:20px;
+    border:1px solid #ccc;
+    border-radius:4px;
+}
+.advance-form input:focus{
+    border-color:#007bff;
+    outline:none;
+    box-shadow:0 0 5px rgba(0, 123,255,0.5);
+}
+.advance-form button{
+    background-color:#007bff;
+    color:#fff;
+    cursor:pointer;
+    border:none;
+    transition:background-color 0.3s ease;
+}
+.advance-form button:hover{
+    background-color:#0056b3;
+}
+@media screen and (max-width:500px){
+        .advance-form {
+            padding:15px;
+        }
+        .advance-form h2{
+            font-size:20px;
+        }
+}
