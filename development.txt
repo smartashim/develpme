@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web search</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+            background-color:orange;
+            background-size:cover;
+            background-attachment:scroll;
+            width:100%;
+            height:100vh;
+            display:flex;
+            position:relative;
+        
+        }
+        .topnav{
+            background-color:black;
+            overflow:visible;
+            width:100%;
+            
+            padding:12px 16px;
+            position:absolute;
+            
+        }
+        .topnav a{
+            float:left;
+            text-align:center;
+            padding:12px 16px;
+            color:white;
+            text-decoration:none;
+            font-size:18px;
+            font-weight:bold;
+            display:block;
+
+        }
+        .topnav a:hover{
+            background-color:dodgerblue;
+        }
+        .container{
+            float:right;
+        }
+        .topnav input[type=text]{
+            padding:6px;
+            margin-top:1px;
+            font-size:17px;
+            border:none;
+        }
+        .topnav .container button{
+            float:right;
+            padding:7px 10px;
+            margin-right:0px;
+            border:none;
+            cursor:pointer;
+            background:#ddd;
+            font-size:17px;
+    
+        }
+        @media screen and (max-width:600px){
+            .topnav .container{
+                float:none;
+            }
+            .topnav a,.topnav input[type=text], .container button{
+                float:none;
+                text-align:left;
+                display:block;
+                width:100%;
+                margin:0;
+                padding:14px;
+            }
+            .topnav input[type=text]{
+                border:1px solid #ccc;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="topnav">
+        <a href="#home" class="active"><i class="fa fa-home">Home</i></a>
+        <a href="#search"><i class="fa fa-search">Search</i></a>
+        <a href="#news"><i class="fa fa-newspaper-o">About</i></a>
+        <a href="#contact"><i class="fa fa-envelope">Contact</i></a>
+        <div class="container">
+            <form>
+            <input type="text" placeholder="search..." name="search">
+            <button type="submit" ><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
