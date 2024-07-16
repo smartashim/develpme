@@ -1,0 +1,90 @@
+In Python, recursion is a technique where a function calls itself to solve a problem. This can be particularly useful for problems that can be broken down into smaller, similar subproblems. Here's a basic example to illustrate how recursion works:
+
+Example: Factorial Calculation
+The factorial of a non-negative integer n is the product of all positive integers less than or equal to n. It is denoted by n!. For example, 5! = 5 * 4 * 3 * 2 * 1 = 120.
+
+Here's how you can implement a factorial function using recursion in Python:def factorial(n):
+
+    # Base case: if n is 0 or 1, return 1
+    if n == 0 or n == 1:
+        return 1
+    # Recursive case: n! = n * (n-1)!
+    else:
+        return n * factorial(n - 1)
+
+# Example usage
+print(factorial(5))  # Output: 120
+
+Explanation
+Base Case: The condition that stops the recursion. In this case, if n is 0 or 1, the function returns 1. This is because the factorial of 0 and 1 is 1.
+Recursive Case: The function calls itself with a smaller value (n - 1). This continues until the base case is reached.
+Important Considerations
+Stack Overflow: If the recursion goes too deep (i.e., the base case is never reached), it can lead to a stack overflow error. Python has a default recursion limit to prevent this, but it's still something to be aware of.
+Efficiency: Recursive solutions can sometimes be less efficient than iterative solutions due to the overhead of function calls.
+Example: Fibonacci Sequence
+Another classic example is the Fibonacci sequence, where each number is the sum of the two preceding ones, starting from 0 and 1. Here's how you can implement it using recursion:
+def fibonacci(n):
+    # Base cases: if n is 0 or 1, return n
+    if n == 0:
+        return 0
+    elif n == 1:
+        return 1
+    # Recursive case: fib(n) = fib(n-1) + fib(n-2)
+    else:
+        return fibonacci(n - 1) + fibonacci(n - 2)
+
+# Example usage
+print(fibonacci(5))  # Output: 5
+
+Explanation
+Base Cases: If n is 0, return 0. If n is 1, return 1.
+Recursive Case: The function calls itself with n-1 and n-2 and returns their sum.
+Conclusion
+Recursion is a powerful tool in Python, but it should be used judiciously. Always ensure you have a clear base case to prevent infinite recursion and consider the efficiency implications.
+python lambda
+In Python, a lambda function is a small, anonymous function defined using the lambda keyword. Lambda functions can have any number of arguments but can only have one expression. They are often used when you need a simple function for a short period and don't want to formally define it using def.
+
+Syntax
+The syntax for a lambda function is:
+1.Basic Example
+# A lambda function that adds 10 to the input number
+add_ten = lambda x: x + 10
+
+print(add_ten(5))  # Output: 15
+
+2.Multiple Arguments
+# A lambda function that multiplies two numbers
+multiply = lambda x, y: x * y
+
+print(multiply(3, 4))  # Output: 12
+
+3.Using with map:
+# Using lambda with map to square each element in a list
+numbers = [1, 2, 3, 4, 5]
+squared_numbers = list(map(lambda x: x**2, numbers))
+
+print(squared_numbers)  # Output: [1, 4, 9, 16, 25]
+
+4.Using with filter:
+# Using lambda with filter to get even numbers from a list
+numbers = [1, 2, 3, 4, 5]
+even_numbers = list(filter(lambda x: x % 2 == 0, numbers))
+
+print(even_numbers)  # Output: [2, 4]
+
+5.Using with sorted:
+# Using lambda with sorted to sort a list of tuples by the second element
+pairs = [(1, 'one'), (2, 'two'), (3, 'three'), (4, 'four')]
+sorted_pairs = sorted(pairs, key=lambda x: x[1])
+
+print(sorted_pairs)  # Output: [(4, 'four'), (1, 'one'), (3, 'three'), (2, 'two')]
+
+Advantages
+Conciseness: Lambda functions are concise and can make code more readable by reducing the need for small, one-off functions.
+Inline Usage: They are useful for functions that are only needed in one place, reducing the overall number of function definitions.
+
+Disadvantages
+Limited Functionality: Lambda functions can only contain a single expression, which limits their complexity.
+Readability: For complex operations, using a full def function can be more readable and maintainable.
+
+
